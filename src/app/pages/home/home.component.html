@@ -1,0 +1,14 @@
+<div class="content">
+    <mat-card *ngFor="let heroe of heroes" class="card" (click)="selectHeroe(heroe)">
+      <mat-card-header>
+        <div mat-card-avatar class="example-header-image"></div>
+        <mat-card-title>{{heroe.name}}</mat-card-title>
+      </mat-card-header>
+      <div class="containe-img">
+        <img [src]="heroe.picture" alt="{{heroe.name}}">
+      </div>
+      <mat-card-actions>
+        <button mat-icon-button class="button"><i class="far fa-heart"></i></button>
+      </mat-card-actions>
+    </mat-card>
+</div>
